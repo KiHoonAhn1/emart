@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ProductRepository from './common/service/product_repository';
+
+const productRepository = new ProductRepository();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App productRepository={productRepository} />
   </React.StrictMode>
 );
 

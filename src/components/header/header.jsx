@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import styles from './header.module.css';
 
-const header = memo(({ URL }) => {
+const header = memo(() => {
   return (
     <header className={styles.header}>
       <div>

@@ -4,7 +4,7 @@ import Product from '../product/product';
 import styles from './product_list.module.css';
 import Menu from '../menu/menu';
 
-const ProductList = ({ products, menus, URL }) => {
+const ProductList = ({ products, menus }) => {
   const [index, setIndex] = useState(0);
   const [productList, setProductList] = useState([]);
 
@@ -57,14 +57,14 @@ const ProductList = ({ products, menus, URL }) => {
 
   return (
     <section>
-      <Header URL={URL} />
+      <Header />
       <div className={styles.product_list}>
         <h1>금주의 전단 상품을 만나보세요.</h1>
         <Menu menus={menus} clickMenu={clickMenu} />
         <ul className={styles.list}>
           {productList &&
             productList.map(product => (
-              <Product key={product.id} product={product} URL={URL} />
+              <Product key={product.id} product={product} />
             ))
           }
         </ul>

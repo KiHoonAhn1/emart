@@ -23,7 +23,7 @@ const Product = ({ product }) => {
 
   return (
     <li className={styles.product}>
-      <img className={styles.img} src={product.img_url} alt="" />
+      <img className={styles.img} src={product.img_url} alt="product" />
       <div className={styles.description}>
         {product.prices && (
           <div className={styles.price_box}>
@@ -41,11 +41,11 @@ const Product = ({ product }) => {
         </div>
         <div className={styles.additional_box}>
           <div className={styles.like_box}>
-            <img className={styles.like_img} src={require(`${URL}/like.png`)} alt="" />
+            <img className={styles.like_img} src="images/like.png" alt="like" />
             <div>{product.like}</div>
           </div>
           <div className={styles.comment_box}>
-            <img className={styles.comment_img} src={require(`${URL}/comment.png`)} alt="" />
+            <img className={styles.comment_img} src="images/comment.png" alt="comment" />
             <div>{product.review}</div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 class ProductRepository {
   async getProducts() {
     const result = await fetch(
-      'https://github.com/KiHoonAhn1/emart/blob/master/public/products.json',
+      'products.json',
       {
         method: 'GET',
       });
@@ -10,7 +10,7 @@ class ProductRepository {
 
   async getMenus() {
     const result = await fetch(
-      'https://github.com/KiHoonAhn1/emart/blob/master/public/menus.json',
+      'menus.json',
       {
         method: 'GET',
       });

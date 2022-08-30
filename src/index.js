@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import ProductRepository from './common/service/product_repository';
 
 const productRepository = new ProductRepository();
+const URL = "https://github.com/KiHoonAhn1/emart/blob/master/public/images";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App productRepository={productRepository} />
+    <App productRepository={productRepository} URL={URL} />
   </React.StrictMode>
 );
 

@@ -41,11 +41,11 @@ const Product = ({ product }) => {
         </div>
         <div className={styles.additional_box}>
           <div className={styles.like_box}>
-            <img className={styles.like_img} src="./images/heart.png" alt="" />
+            <img className={styles.like_img} src={require(`${URL}/like.png`)} alt="" />
             <div>{product.like}</div>
           </div>
           <div className={styles.comment_box}>
-            <img className={styles.comment_img} src="./images/comment.png" alt="" />
+            <img className={styles.comment_img} src={require(`${URL}/comment.png`)} alt="" />
             <div>{product.review}</div>
           </div>
         </div>

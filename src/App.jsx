@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import ProductList from './components/product_list/product_list';
 import styles from './App.module.css';
 
-function App({ productRepository }) {
+function App({ productRepository, URL }) {
   const [products, setProducts] = useState([]);
   const [menus, setMenus] = useState(null);
 
@@ -31,7 +31,7 @@ function App({ productRepository }) {
 
   return (
     <div className={styles.app}>
-      <ProductList products={products} menus={menus} />
+      <ProductList products={products} menus={menus} URL={URL} />
     </div>
   );
 }
